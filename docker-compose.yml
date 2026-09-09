@@ -5,8 +5,6 @@ services:
     runtime: nvidia
     environment:
       - NVIDIA_VISIBLE_DEVICES=all
-    devices:
-      - /dev/video0:/dev/video0
     volumes:
       - .:/app
     stdin_open: true
